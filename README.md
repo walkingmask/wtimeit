@@ -6,6 +6,12 @@ Inspired by
 - [timeitd](https://github.com/canercidam/timeitd)
 
 
+## Installation
+```
+pip install git+https://github.com/walkingmask/wtimeit
+```
+
+
 ## Usage
 ```
 import wtimeit
