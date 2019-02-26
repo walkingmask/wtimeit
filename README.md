@@ -17,7 +17,7 @@ pip install git+https://github.com/walkingmask/wtimeit
 import wtimeit
 
 
-@wtimeit.wtimeit(repeat=100)
+@wtimeit.timeit(repeat=100)
 def test_decorator(a, b):
     return sum([i*j for j in range(b) for i in range(a)])
 
