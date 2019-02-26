@@ -23,3 +23,10 @@ def test_func(a, b):
 test_decorator(100, 1000)
 wtimeit.timeit(lambda: test_func(100, 1000), repeat=100)
 ```
+
+
+## Arguments
+- `lambda_func`: lambda function like as `lambda: function(*args, **kwargs)` (default None)
+- `repeat`: number of measurement runs (default 1)
+- `unit`: Unit of output seconds ('': sec, 'm': msec, 'u': usec, 'n': nsec) (default '')
+- `func_name`: name of function (default None)
