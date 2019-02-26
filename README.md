@@ -11,15 +11,15 @@ Inspired by
 import wtimeit
 
 
+@wtimeit.wtimeit(repeat=100)
+def test_decorator(a, b):
+    return sum([i*j for j in range(b) for i in range(a)])
+
+
 def test_func(a, b):
     return sum([i*j for j in range(b) for i in range(a)])
 
 
-def test_timeit():
-    return wtimeit.timeit(lambda: test_func(100, 1000))
-
-
-@wtimeit.wtimeit()
-def test_wtimeit():
-    return test_func(100, 1000)
+test_decorator(100, 1000)
+wtimeit.timeit(lambda: test_func(100, 1000), repeat=100)
 ```
